@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap");
+
+.dancing-text {
+  background: linear-gradient(90deg, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Bitcount Grid Double, system-ui;
+  font-size: 25px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.header-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.font-used {
+  font-family: "poppins", sans-serif;
+}
+.header-container {
+  // @extend .font-used;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  box-shadow: 0 2px 4px rgba(0, 0, 0.1);
+}
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.nav-links a:hover {
+  color: #7c3aed;
+}

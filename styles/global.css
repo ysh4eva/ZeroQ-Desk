@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #A78BFA;
+  --color-primary-dark: #7C3AED;
+  --color-secondary: #FBBF24;
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-text-main: #374151;
+  --color-text-muted: #6B7280;
+  --color-error: #FCA5A5;
+  --color-success: #86EFAC;
+}
+
+/* Your custom CSS below this */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: black; */
+}
+
+h1 {
+  color: red;
+  font-size: 50px;
+}

@@ -1,0 +1,78 @@
+/* [project]/src/pages/Tickets/Tickets.module.scss.module.css [client] (css) */
+.Tickets-module-scss-module__8Y_p-G__body {
+  background: var(--color-background);
+  min-height: 100vh;
+  color: var(--color-text-main);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.Tickets-module-scss-module__8Y_p-G__container {
+  background: var(--color-surface);
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  box-shadow: 0 0 20px #00000080;
+}
+
+.Tickets-module-scss-module__8Y_p-G__text {
+  text-align: center;
+  background: -webkit-linear-gradient(right, var(--color-primary), var(--color-accent), var(--color-primary), var(--color-accent));
+  -webkit-text-fill-color: #0000;
+  -webkit-background-clip: text;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Tickets-module-scss-module__8Y_p-G__name-container, .Tickets-module-scss-module__8Y_p-G__email-container, .Tickets-module-scss-module__8Y_p-G__issue-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+}
+
+.Tickets-module-scss-module__8Y_p-G__input-name, .Tickets-module-scss-module__8Y_p-G__input-issue {
+  width: 100%;
+  color: var(--color-text-main);
+  border: 1px solid #444;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+}
+
+.Tickets-module-scss-module__8Y_p-G__input-issue {
+  resize: none;
+}
+
+.Tickets-module-scss-module__8Y_p-G__button-container {
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.Tickets-module-scss-module__8Y_p-G__submit-button {
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  transition: background-color .3s;
+}
+
+.Tickets-module-scss-module__8Y_p-G__submit-button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/*# sourceMappingURL=src_pages_Tickets_Tickets_module_scss_module_css_2bef753f._.single.css.map*/
