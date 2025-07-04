@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/Header/Header.module.scss.module.css"],"sourcesContent":["/*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */\n@import \"https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap\";\n.dancing-text {\n  background: linear-gradient(90deg, #a78bfa, #f472b6);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: rgba(0,0,0,0);\n  font-family: Bitcount Grid Double,system-ui;\n  font-size: 25px;\n  font-weight: 600;\n  padding-top: 10px;\n}\n.header-text-container {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 10px;\n}\n.font-used {\n  font-family: \"poppins\",sans-serif;\n}\n.header-container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 1rem;\n  background-color: var(--color-surface);\n  box-shadow: 0 2px 4px rgb(0,0,.1);\n}\n.nav-links a {\n  margin-left: 20px;\n  text-decoration: none;\n  color: #6b7280;\n  font-weight: 500;\n  font-size: 17px;\n}\n.nav-links a:hover {\n  color: #7c3aed;\n}"],"names":[],"mappings":"AAEA;;;;;;;;;;AASA;;;;;;;AAMA;;;;AAGA;;;;;;;;;AAQA;;;;;;;;AAOA"}}]
-}
