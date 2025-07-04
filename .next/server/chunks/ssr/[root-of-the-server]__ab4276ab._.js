@@ -455,7 +455,7 @@ function Tickets() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                         className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$pages$2f$Tickets$2f$Tickets$2e$module$2e$scss$2e$module$2e$css__$5b$ssr$5d$__$28$css__module$29$__["default"].text,
-                        children: "Ticket to be raised"
+                        children: "Tickets to be raised"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/Tickets/index.tsx",
                         lineNumber: 70,
