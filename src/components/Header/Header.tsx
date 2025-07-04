@@ -1,10 +1,28 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
+import { useContext } from "react";
 import styles from "./Header.module.scss";
-import "../../../styles/global.css"; // Ensure global styles are imported
+import "../../../styles/global.css";
+import { RoleContext } from "@/context/RoleContext";
 
-export default function Header() {
+interface HeaderProps {
+  setPage: (page: string) => void;
+}
+
+export default function Header({ setPage }: HeaderProps) {
+  const { role, setRole } = useContext(RoleContext);
+
+  const handleToggleRole = () => {
+    const newRole = role === "client" ? "admin" : "client";
+    setRole(newRole);
+  };
+
+  const handlePageChange = (page: string) => () => {
+    setPage(page);
+  };
+
   return (
     <>
       <Head>
@@ -18,14 +36,29 @@ export default function Header() {
           <Image src="/cyborg.png" alt="ZeroQ Logo" width={40} height={40} />
           <div className={styles["dancing-text"]}>ZeroQ Desk</div>
         </div>
+
+        <div className={styles["role-indicator"]}>
+          {role === "admin" ? "🛡 Admin Dashboard" : "🙋‍♀️ Client Dashboard"}
+        </div>
+
         <nav className={styles["nav-links"]}>
-          <Link href="/Tickets" className={styles.navLink}>
+          <div className={styles.navLink} onClick={handlePageChange("tickets")}>
             Tickets
-          </Link>
-          <Link href="/Dashboard" className={styles.navLink}>
+          </div>
+          <div className={styles.navLink} onClick={handlePageChange("dashboard")}>
             Dashboard
-          </Link>
+          </div>
         </nav>
+
+        <div className={styles["toggle-container"]} onClick={handleToggleRole}>
+          <div
+            className={`${styles["toggle-switch"]} ${
+              role === "admin" ? styles["active"] : ""
+            }`}
+          >
+            {role === "admin" ? "Admin" : "Client"}
+          </div>
+        </div>
       </header>
     </>
   );

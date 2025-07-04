@@ -30,7 +30,14 @@ export default function SelectDropdown({
   };
 
   return (
-    <div style={{ position: "relative", marginBottom: "10px", ...mainStyle }}>
+    <div
+      style={{
+        position: "relative",
+        marginBottom: "10px",
+        width: "100%",
+        ...mainStyle,
+      }}
+    >
       <label>{label}:</label>
       <div
         style={{
@@ -38,6 +45,7 @@ export default function SelectDropdown({
           padding: "10px",
           cursor: "pointer",
           borderRadius: "8px",
+          width: "100%", // ✅ Make sure the clickable box has a full width
           ...style,
         }}
         onClick={() => setIsOpen(!isOpen)}
@@ -73,6 +81,7 @@ export default function SelectDropdown({
             maxHeight: "200px",
             overflowY: "auto",
             zIndex: 1000,
+            minWidth: "100%", // ✅ Fix: make dropdown match the main box width
           }}
         >
           {options.map((opt, index) => (

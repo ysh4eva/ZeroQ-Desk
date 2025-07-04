@@ -3,7 +3,6 @@ import { useState } from "react";
 import styles from "./Tickets.module.scss";
 import SelectDropdown from "@/components/Dropdown/Dropdown";
 import { companies } from "@/lib/companies";
-import Header from "@/components/Header/Header";
 import { ticketCreation } from "@/app/services/ticket";
 
 export default function Tickets() {
@@ -20,7 +19,6 @@ export default function Tickets() {
     borderRadius: "5px",
     border: "1px solid #ccc",
     fontSize: "16px",
-    width: "70%",
     marginTop: "10px",
     outline: "none",
     cursor: "pointer",
@@ -28,6 +26,7 @@ export default function Tickets() {
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
   };
   const dropDownContainerStyles: React.CSSProperties = {
+    width: "70%",
     display: "flex",
     flexDirection: "column",
     marginBottom: "10px",
@@ -63,9 +62,10 @@ export default function Tickets() {
 
     setSubmitted(true);
   };
+
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <div className={styles.container}>
         <div className={styles.text}>Ticket to be raised</div>
 
@@ -102,10 +102,10 @@ export default function Tickets() {
               required
               onChange={(e) => setEmail(e.target.value)}
               value={email}
-              className={styles["input-name"]}
+              className={styles["input-email"]} // Assuming you have a class for email input
             />
           </div>
-          <div style={{ marginBottom: "10px" }}>
+          <div className={styles["company-container"]}>
             <SelectDropdown
               label="Company"
               options={companies}

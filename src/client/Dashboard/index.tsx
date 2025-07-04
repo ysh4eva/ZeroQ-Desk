@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { fetchTickets } from "@/app/services/ticket";
 import { useEffect, useState } from "react";
-import Header from "@/components/Header/Header";
 
 export default function Dashboard() {
   const [tickets, setTickets] = useState<any[]>([]);
@@ -26,7 +26,6 @@ export default function Dashboard() {
 
   return (
     <div>
-      <Header />
       <h1>Dashboard</h1>
       <div>
         <h2>Tickets</h2>

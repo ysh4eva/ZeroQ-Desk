@@ -24,19 +24,15 @@
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 25px;
-  background: -webkit-linear-gradient(
-    right,
-    var(--color-primary),
-    var(--color-accent),
-    var(--color-primary),
-    var(--color-accent)
-  );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #ff6ec4, #7873f5);
 }
 
-.name-container,
 .email-container,
 .issue-container {
   display: flex;
@@ -46,7 +42,29 @@
   flex-direction: column;
   font-family: "Poppins", sans-serif;
 }
-
+.name-container {
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.input-email {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  color: var(--color-text-main);
+}
+.email-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .input-name,
 .input-issue {
   width: 100%;
@@ -83,4 +101,12 @@
 
 .submit-button:hover {
   background-color: var(--color-primary-dark);
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }

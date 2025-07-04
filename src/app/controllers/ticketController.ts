@@ -24,7 +24,7 @@ export async function createTicket(request: Request) {
       firstName: body.firstName,
       lastName: body.lastName,
       email: body.email,
-      company: body.company,
+      companyId: body.company?.uuid,
       issue: body.issue,
       ticketId,
       status: "unresolved", // Make sure this matches your enum exactly

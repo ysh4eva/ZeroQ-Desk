@@ -7,7 +7,7 @@ const TicketSchema = new mongoose.Schema(
     lastName: String,
     email: String,
     clientId: String, // e.g., ABC Corp
-    companyId: String, // e.g., "abc-corp" → Important for filtering
+    companyId: String, // e.g., ABC Corp
     issue: String,
     status: {
       type: String,

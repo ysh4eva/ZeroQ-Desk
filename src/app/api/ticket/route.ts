@@ -1,8 +1,10 @@
-import { NextResponse } from "next/server";
 import mongoose from "mongoose";
 import { createTicket, getTickets } from "@/app/controllers/ticketController";
+// MONGO_URI =
+//   "mongodb+srv://vyshnavizeroQ:zeroQ@zeroq.qcnyvyy.mongodb.net/zeroq?retryWrites=true&w=majority";
 
-const MONGO_URI = process.env.MONGO_URI!;
+const MONGO_URI =
+  "mongodb+srv://vyshnavizeroQ:zeroq@zeroq.qcnyvyy.mongodb.net/zeroq?retryWrites=true&w=majority";
 
 // Connect to MongoDB (only once)
 if (!mongoose.connections[0].readyState) {

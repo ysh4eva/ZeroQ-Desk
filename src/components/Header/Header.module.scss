@@ -38,3 +38,25 @@
 .nav-links a:hover {
   color: #7c3aed;
 }
+.toggle-container {
+  background: #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.toggle-switch {
+  background: #fff;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-weight: 600;
+  color: #555;
+  transition: 0.3s;
+}
+
+.toggle-switch.active {
+  background: #9f01ea;
+  color: #fff;
+}
+
