@@ -67,7 +67,7 @@ export default function Tickets() {
     <div>
       <Header />
       <div className={styles.container}>
-        <div className={styles.text}>Tickets to be raised</div>
+        <div className={styles.text}>Ticket to be raised</div>
 
         <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
           <div className={styles["name-container"]}>
